@@ -1,0 +1,152 @@
+body{
+    user-select: none; 
+    -webkit-user-select: none; 
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+.product-container {
+    padding-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+.product-item {
+    position: relative;
+    cursor: pointer;
+    height: 400x;
+    width: 200px;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    background-color: rgba(228, 228, 223, 0.316);
+    transition: transform 0.3s ease; 
+}
+
+.product-price-text {
+    font-size: 0.875rem;
+    line-height: 1.25rem; 
+    font-weight: 400; 
+    line-height: 1; 
+    color: #974e67;
+    padding-left: 5px;
+}
+
+.product-info-text {
+    padding-top: 5px;
+    font-size: 1rem;
+    line-height: 1.5rem; 
+    font-weight: 500; 
+    color: #1b0e12;
+}
+
+.product-item-img {
+    border-radius: 0.75rem; 
+    width: 100%; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    aspect-ratio: 3 / 4;
+    padding-bottom: 5px;
+   
+}
+.product-item:hover{
+    transform: scale(1.05);
+}
+
+.supercontainer{
+    display: flex;
+}
+.content{
+    max-width: calc(100%-360px);
+    display: flex; 
+    flex-direction: column; 
+    flex: 1 1 0%; 
+}
+.filters{
+    display: flex; 
+    flex-direction: column; 
+    width: 360px;
+}
+.dropdown-filters-container{
+    display: flex; 
+    padding: 0.75rem; 
+    padding-right: 1rem; 
+    flex-wrap: wrap; 
+    gap: 0.75rem; 
+}
+.subsuper-container{
+    display: flex; 
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem; 
+    padding-left: 1.5rem;
+    padding-right: 1.5rem; 
+    flex: 1 1 0%; 
+    gap: 0.25rem; 
+    justify-content: center; 
+}
+.sectionheader{
+    padding-left: 1rem;
+    padding-right: 1rem; 
+    padding-bottom: 0.75rem; 
+    padding-top: 1.5rem; 
+    font-weight: 700; 
+    line-height: 1.25; 
+    text-align: left; 
+    color: #1C160C;
+    font-size: 32px;
+}
+.btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: transparent;
+    border: none;
+    font-size: 20;
+    outline: black;
+    color: lightgray;
+}
+
+.btn i:hover {
+    color: red;
+    cursor: pointer;
+}
+.productitem-out{
+    position: relative;
+}
+.category-button {
+    display: flex; 
+    padding-right: 0.5rem; 
+    padding-left: 1rem; 
+    flex-shrink: 0; 
+    column-gap: 0.5rem; 
+    justify-content: center; 
+    align-items: center; 
+    border-radius: 9999px; 
+    height: 2rem; 
+    background: #F4EFE6;  
+}
+
+.categorytext {
+    font-size: 0.875rem;
+    line-height: 1.25rem; 
+    font-weight: 500; 
+    line-height: 1.5; 
+    color: #1C160C;
+}
+
+.icon-container {
+    color: #1C160C;
+}
+
+.icon-container svg {
+    width: 20px;
+    height: 20px;
+}
+.inptext{
+    height: 100%;
+}
+
+  

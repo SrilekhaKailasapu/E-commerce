@@ -1,0 +1,301 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Work+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+    <link rel="stylesheet" href="assets/styles/home.css" />
+    <link rel="stylesheet" href="assets/styles/cart.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+        <div class="navbar-brand">
+          <a href="index.html">Fashion App</a>
+        </div>
+        <ul class="navbar-nav">
+          <li class="nav-item"><a href="index.html">Home</a></li>
+          <li class="nav-item"><a href="shop.html?categ=men_all">Men</a></li>
+          <li class="nav-item"><a href="shop.html?categ=ladies_all">Women</a></li>
+          <li class="nav-item"><a href="shop.html?categ=kids_all">Kids</a></li>
+        </ul>
+        <div class="navbar-icons">
+          <label>
+            <div class="searchcont">
+              <div class="imgcont">
+                <img width="24" height="24" src="assets/icons/icon-search.png" alt="search" />
+              </div>
+              <input placeholder="Search" class="inptext" value="" />
+            </div>
+          </label>
+          <div class="icons">
+            <div class="icon-item">
+              <a href="wishlist.html">
+                <img width="20" height="20" src="https://img.icons8.com/ios/50/like--v1.png" alt="like--v1" />
+              </a>
+            </div>
+            <div class="icon-item">
+              <a href="cart.html">
+                <img width="20" height="20" src="https://img.icons8.com/fluency-systems-regular/50/shopping-cart--v1.png" alt="shopping-cart--v1" />
+              </a>
+            </div>
+            <div class="icon-item">
+              <a href="recentorders.html">
+                <img width="20" height="20" src="https://img.icons8.com/ios/50/delivery--v1.png" alt="delivery--v1"/>
+              </a>
+            </div>
+            <div class="icon-item">
+              <a href="">
+                <img width="20" height="20" src="https://img.icons8.com/ios/50/enter-2.png" alt="enter-2" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="page-container">
+        <div class="layout-container">
+          <div class="header-container">
+            <div class="layout-content-container">
+              <div class="title-container">
+                <p class="page-title">Shopping Bag</p>
+              </div>
+            
+        
+            <div class="products-container">
+                <div class="product-container">
+                    <div class="product-details">
+                        <div class="product-image" style='background-image: url("https://cdn.usegalileo.ai/sdxl10/63834f38-b206-4bfd-9faf-7162c218ca0b.png");'></div>
+                        <div class="product-info">
+                            <p class="product-name">Nike Air Max 270</p>
+                            <p class="product-size">Size: 8.5</p>
+                        </div>
+                    </div>
+                    <div class="ctr">
+                        <div class="iconitem">
+                            <img width="40" height="40" src="https://img.icons8.com/ios-glyphs/30/plus--v1.png" alt="plus--v1"/>
+                        </div>
+                        <div class="counttext">1</div>
+                        <div class="iconitem">
+                            <img width="40" height="40" src="https://img.icons8.com/ios-glyphs/30/minus.png" alt="minus"/>
+                        </div>
+                    </div>
+                    <div class="product-price">
+                        <p>$150</p>
+                    </div>
+                </div>
+                <div class="product-container">
+                    <div class="product-details">
+                        <div class="product-image" style='background-image: url("https://cdn.usegalileo.ai/sdxl10/63834f38-b206-4bfd-9faf-7162c218ca0b.png");'></div>
+                        <div class="product-info">
+                            <p class="product-name">Nike Air Max 270</p>
+                            <p class="product-size">Size: 8.5</p>
+                        </div>
+                    </div>
+                    <div class="ctr">
+                        <div class="iconitem">
+                            <img width="35" height="35" src="https://img.icons8.com/ios-glyphs/30/minus.png" alt="minus"/>
+                        </div>
+                        <div class="counttext">2</div>
+                        <div class="iconitem">
+                            <img width="35" height="35" src="https://img.icons8.com/ios-glyphs/30/plus--v1.png" alt="plus--v1"/>
+                        </div>
+                    </div>
+                    <div class="product-price">
+                        <p>$150</p>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="special-touch-title">Would you like to add a special touch?</h3>
+
+            <div class="flex-container">
+                <label class="label-container">
+                  <p class="label-text">Gift message (optional)</p>
+                  <textarea
+                    placeholder="Add a personal note to the recipient"
+                    class="textarea-input"
+                  ></textarea>
+                </label>
+              </div>
+              
+            <div class="buttonouter">
+              <div class="buttoninner">
+                <button class="btn" style="background-color: #f0f2f4;">
+                  <span class="btntxt" style="color: #111418;">Keep shopping</span>
+                </button>
+                <button class="btn" onclick="location.href='orderplaced.html'">
+                  <span class="btntxt">Checkout</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="pricesection">
+            <h3 class="priceheader">Order Summary</h3>
+            <div class="p-4">
+              <div class="priceinf">
+                <p class="pricetext">Subtotal</p>
+                <p class="priceinrupees" id="subtotal">₹0</p>
+              </div>
+              <div class="priceinf">
+                <p class="pricetext">Estimated Shipping</p>
+                <p class="priceinrupees">Free</p>
+              </div>
+              <div class="priceinf">
+                <p class="pricetext">Taxes</p>
+                <p class="priceinrupees">To be determined</p>
+              </div>
+              <div class="priceinf">
+                <p class="pricetext">Total</p>
+                <p class="priceinrupees" id="total">₹0</p>
+              </div>
+            </div>
+            <p class="rulestext">
+              International taxes and duties are not included in your checkout total and are calculated at the time of delivery
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h2 class="category-head" style="margin-left:-20px ;">Recommended for You</h2>
+    <div class="trending">
+      <div class="trending-item">
+        <div class="trending-item-img" style='background-image: url("assets/images/summerdresses.png");'></div>
+        <div>
+          <p class="info-text">Colorful summer dresses</p>
+          <p class="price-text">₹3000+</p>
+        </div>
+      </div>
+      <div class="trending-item">
+        <div class="trending-item-img" style='background-image: url("assets/images/sunglasses.png");'></div>
+        <div>
+          <p class="info-text">Vintage sunglasses</p>
+          <p class="price-text">₹3000+</p>
+        </div>
+      </div>
+      <div class="trending-item">
+        <div class="trending-item-img" style='background-image: url("assets/images/sandals.png");'></div>
+        <div>
+          <p class="info-text">Beach ready sandals</p>
+          <p class="price-text">₹3000+</p>
+        </div>
+      </div>
+      <div class="trending-item">
+        <div class="trending-item-img" style='background-image: url("assets/images/graphictees.png");'></div>
+        <div>
+          <p class="info-text">Graphic tees</p>
+          <p class="price-text">₹3000+</p>
+        </div>
+      </div>
+    </div>
+    <script>
+    function renderProducts() {
+    const productsContainer = document.querySelector('.products-container');
+    productsContainer.innerHTML = '';
+
+    const cart = JSON.parse(localStorage.getItem('cart')) || {}; // Ensure cart is defined
+    let subtotal = 0;
+
+    for (const key in cart) {
+        const productData = cart[key];
+
+        // Set initial count if not already present
+        if (productData.cnt === undefined) {
+            productData.cnt = 1;
+        }
+
+        // Set initial price if not already present
+        if (!productData.price || productData.price.value === undefined) {
+            productData.price = { value: 0 };
+        }
+
+        const productContainer = document.createElement('div');
+        productContainer.classList.add('product-container');
+
+        productContainer.innerHTML = `
+          <div class="product-details">
+              <div class="product-image" style='background-image: url("${productData.images[0].url}");'></div>
+              <div class="product-info">
+                  <p class="product-name">${productData.name}</p>
+                  <p class="product-size">Size: ${productData.variantSizes && productData.variantSizes.length > 0 ? productData.variantSizes[0].filterCode : "S"}</p>
+              </div>
+          </div>
+          <div class="ctr">
+              <div class="iconitem" onclick="updateCount('${key}', -1)">
+                  <img width="35" height="35" src="https://img.icons8.com/ios-glyphs/30/minus.png" alt="minus"/>
+              </div>
+              <div class="counttext" id="count-${key}">${productData.cnt}</div>
+              <div class="iconitem" onclick="updateCount('${key}', 1)">
+                  <img width="35" height="35" src="https://img.icons8.com/ios-glyphs/30/plus--v1.png" alt="plus"/>
+              </div>
+          </div>
+          <div class="product-price">
+              <p id="price-${key}" data-id=${productData.price.value}>${productData.cnt} x ₹${productData.price.value}</p>
+          </div>
+        `;
+
+        productsContainer.appendChild(productContainer);
+        subtotal += productData.cnt * productData.price.value;
+    }
+
+    // Update subtotal and total display
+    document.getElementById('subtotal').textContent = `₹${subtotal}`;
+    document.getElementById('total').textContent = `₹${subtotal}`;
+}
+
+function updateCount(itemKey, change) {
+    const countElement = document.getElementById(`count-${itemKey}`);
+    const priceText = document.getElementById(`price-${itemKey}`);
+    const unitPrice = parseFloat(priceText.dataset.id);
+    let count = parseInt(countElement.textContent) || 1;
+
+    // Update count based on the change
+    count += change;
+    if (count < 0) count = 0;
+
+    // Update the display count and price
+    countElement.textContent = count;
+    priceText.textContent = `${count} x ₹${unitPrice}`;
+
+    // Update cart in localStorage
+    const cart = JSON.parse(localStorage.getItem('cart')) || {};
+    if (cart[itemKey]) {
+        cart[itemKey].cnt = count;
+    }
+
+    // Remove item if count is zero
+    if (count === 0) {
+        delete cart[itemKey];
+    }
+
+    // Save updated cart and refresh localStorage
+    localStorage.setItem('cart', JSON.stringify(cart));
+
+    // Re-render the cart and update subtotal
+    renderProducts();
+    calculateSubtotal();
+}
+
+// Function to calculate and display subtotal and total
+function calculateSubtotal() {
+    const cart = JSON.parse(localStorage.getItem('cart')) || {};
+    let subtotal = 0;
+
+    for (const key in cart) {
+        const productData = cart[key];
+        const cnt = productData.cnt !== undefined ? productData.cnt : 1;
+        const priceValue = productData.price && productData.price.value !== undefined ? productData.price.value : 0;
+        subtotal += cnt * priceValue;
+    }
+
+    // Update subtotal and total in the order summary
+    document.getElementById('subtotal').textContent = `₹${subtotal}`;
+    document.getElementById('total').textContent = `₹${subtotal}`;
+}
+
+// Initial render
+renderProducts();
+</script>
+</body>
+</html>

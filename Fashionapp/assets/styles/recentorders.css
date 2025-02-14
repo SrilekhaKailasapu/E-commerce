@@ -1,0 +1,132 @@
+.order-container{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: white;
+    padding: 8px 16px;
+    min-height: 72px;
+    justify-content: space-between;
+
+}
+  
+.order-details{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 55%;
+}
+.order-image{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    aspect-ratio: 1;
+    border-radius: 0.5rem;
+    width: 56px;
+    height: 56px;
+}
+.order-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.iconitem{
+    display: flex; 
+    overflow: hidden; 
+    padding-left: 0.625rem;
+    padding-right: 0.625rem; 
+    gap: 0.5rem; 
+    justify-content: center; 
+    align-items: center; 
+    border-radius: 0.75rem; 
+    min-width: 0; 
+    height: 3.5rem;
+    width: 2rem; 
+    font-size: 0.875rem;
+    line-height: 1.25rem; 
+    font-weight: 700; 
+    line-height: 1.5; 
+    cursor: pointer; 
+    max-width: 480px;
+    background-color: #f0f2f4;
+    color: #1b0e12;
+}
+.order-date{
+    margin: 0;
+    color: #111418;
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: normal;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+  
+.order-size{
+    margin: 0;
+    color: #637588;
+    font-size: 0.85rem;
+    font-weight: 400;
+    line-height: normal;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.btntxt a:visited ,.btntxt a:hover ,.btntxt a:focus {
+    color: #111418;
+    text-decoration: none;
+    outline: none;
+}
+.btntxt{
+    color: #111418;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    line-height: 1.5rem; 
+    font-weight: 600; 
+    line-height: 1.5; 
+    padding: 5px 15px;
+    border-radius: 0.5rem;
+    background-color: #f0f2f4;
+}
+.heading{
+    margin: 0;
+    padding-left: 1rem;
+    padding-right: 1rem; 
+    padding-bottom: 0.5rem; 
+    padding-top: 1rem; 
+    font-size: 1.25rem;
+    margin-left: -5px;
+    line-height: 1.75rem; 
+    font-weight: 700; 
+    line-height: 1.25; 
+    color: #111418;  
+}
+.main-heading{
+    font-weight: 700; 
+    font-size: 32px;
+    line-height: 1.25; 
+    color: #111418;
+}
+.main-sub{
+    margin-top: -15px;
+    font-size: 0.875rem;
+    font-weight: 400; 
+    color: #637588;
+    padding-left: 10px;
+}
+.main-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-left: 22.5%;
+    padding-right: 22.5%;
+    background-color: white;
+    overflow-x: hidden;
+}
+.inptext{
+    height: 100%;
+}

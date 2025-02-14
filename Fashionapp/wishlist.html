@@ -1,0 +1,98 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Work+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+    <link rel="stylesheet" href="assets/styles/wishlist.css" />
+    <link rel="stylesheet" href="assets/styles/home.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+        <div class="navbar-brand">
+          <a href="index.html">Fashion App</a>
+        </div>
+        <ul class="navbar-nav">
+          <li class="nav-item"><a href="index.html">Home</a></li>
+          <li class="nav-item"><a href="shop.html?categ=men_all">Men</a></li>
+          <li class="nav-item"><a href="shop.html?categ=ladies_all">Women</a></li>
+          <li class="nav-item"><a href="shop.html?categ=kids_all">Kids</a></li>
+        </ul>
+        <div class="navbar-icons">
+          <label>
+            <div class="searchcont"> 
+              <div class="imgcont">
+                <img width="24" height="24" src="assets/icons/icon-search.png" alt="search" />
+              </div>
+              <input placeholder="Search" class="inptext" value="" />
+            </div>
+          </label>
+          <div class="icons">
+            <div class="icon-item">
+              <a href="wishlist.html">
+                <img width="20" height="20" src="https://img.icons8.com/ios/50/like--v1.png" alt="like--v1" />
+              </a>
+            </div>
+            <div class="icon-item">
+              <a href="cart.html">
+                <img width="20" height="20" src="https://img.icons8.com/fluency-systems-regular/50/shopping-cart--v1.png" alt="shopping-cart--v1" />
+              </a>
+            </div>
+            <div class="icon-item">
+              <a href="recentorders.html">
+                <img width="20" height="20" src="https://img.icons8.com/ios/50/delivery--v1.png" alt="delivery--v1"/>
+              </a>
+            </div>
+            <div class="icon-item">
+              <a href="">
+                <img width="20" height="20" src="https://img.icons8.com/ios/50/enter-2.png" alt="enter-2" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    <div class="heading-div"><p class="heading">Saved Items</p></div>
+    <div class="ContaiNer" id="wishlist-container"></div>
+
+    <script>
+      function loadWishlist() {
+        const wishlistContainer = document.getElementById('wishlist-container');
+        const wishlist = JSON.parse(localStorage.getItem('wishlist')) || {};
+        wishlistContainer.innerHTML = '';
+        for (const key in wishlist) {
+          if (wishlist.hasOwnProperty(key)) {
+            const item =JSON.parse(wishlist[key]);
+            const itemElement = document.createElement('div');
+            itemElement.className = 'wishlistitem';
+            // console.log(item);
+            itemElement.innerHTML = `
+              <div class="wishlistitem-sub">
+                <div class="wishlistitem-img" style="background-image: url('${item.images[0].url}');"></div>
+                <div class="item-info">
+                  <p class="item-name">${item.name}</p>
+                  <p class="item-colorinfo">White, Size ${item.variantSizes[0].filterCode}</p>
+                </div>
+              </div>
+              <div class="icon-item" onclick="removeItem('${key}')">
+                <img width="24" height="24" src="https://img.icons8.com/material-rounded/24/multiply--v1.png" alt="multiply--v1"/>
+              </div>
+              <hr>
+            `;
+
+            wishlistContainer.appendChild(itemElement);
+          }
+        }
+      }
+      function removeItem(index) {
+        let wishlist = JSON.parse(localStorage.getItem('wishlist')) || {};
+        delete wishlist[index];
+        localStorage.setItem('wishlist', JSON.stringify(wishlist));
+        loadWishlist();
+      }
+      window.onload = loadWishlist;
+    </script>
+  </body>
+</html>

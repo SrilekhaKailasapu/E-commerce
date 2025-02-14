@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <head>
+      <title>Fashion App</title>
+      <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+      <link rel="stylesheet" as="style" onload="this.rel='stylesheet'" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Be+Vietnam+Pro%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"/>
+      <link rel="stylesheet" href="assets/styles/home.css" />
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      />
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      />
+      <script src="https://kit.fontawesome.com/f6dcf461c1.js" crossorigin="anonymous"></script>
+</head>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-brand">
+        <a href="index.html">Fashion App</a>
+      </div>
+      <ul class="navbar-nav">
+        <li class="nav-item"><a href="index.html">Home</a></li>
+        <li class="nav-item"><a href="shop.html?categ=men_all">Men</a></li>
+        <li class="nav-item"><a href="shop.html?categ=ladies_all">Women</a></li>
+        <li class="nav-item"><a href="shop.html?categ=kids_all">Kids</a></li>
+      </ul>
+      <div class="navbar-icons">
+        <label>
+          <div class="searchcont">
+            <div class="imgcont">
+              <img width="24" height="24" src="assets/icons/icon-search.png" alt="search" />
+            </div>
+            <input placeholder="Search" class="inptext" value="" id="searchInput"/> 
+          </div>
+        </label> 
+        <div class="icons">
+          <div class="icon-item">
+            <a href="wishlist.html">
+              <img width="20" height="20" src="https://img.icons8.com/ios/50/like--v1.png" alt="like--v1" />
+            </a>
+          </div>
+          <div class="icon-item">
+            <a href="cart.html">
+              <img width="20" height="20" src="https://img.icons8.com/fluency-systems-regular/50/shopping-cart--v1.png" alt="shopping-cart--v1" />
+            </a>
+          </div>
+          <div class="icon-item">
+            <a href="recentorders.html">
+              <img width="20" height="20" src="https://img.icons8.com/ios/50/delivery--v1.png" alt="delivery--v1"/>
+            </a>
+          </div>
+          <div class="icon-item">
+            <a href="">
+              <img width="20" height="20" src="https://img.icons8.com/ios/50/enter-2.png" alt="enter-2" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    
+    <div>
+      <div class="maincont">
+        <div class="maincont-img-container">
+          <img class="maincont-img" src="assets/images/mainimg.jpg" alt="Women" />
+          <span class="maincont-text">Shop new arrivals</span>
+          <label class="maincont-search">
+            <div class="maincont-searchcont">
+              <div class="maincont-imgcont">
+                <img width="20" height="20" src="assets/icons/icon-search.png" alt="search" />
+              </div>
+              <input placeholder="Search for items" class="maincont-inptext" value="" />
+              <div id="search">
+                <span id="searchspan">Search</span>
+              </div>
+            </div>
+          </label>
+        </div>
+      </div>
+
+      <h2 class="category-head">Discover our selection</h2>
+      <div class="category-container">
+        <div class="category-item">
+          <a href="shop.html?categ=ladies_all">
+            <div class="category-img-container">
+              <img class="category-img" src="assets/images/women.jpg" alt="Women" />
+              <span class="category-text">Women</span>
+            </div>
+          </a>
+        </div>
+        <div class="category-item">
+          <a href="shop.html?categ=men_all">
+            <div class="category-img-container">
+              <img class="category-img" src="assets/images/women.jpg" alt="Men" />
+              <span class="category-text">Men</span>
+            </div>
+          </a>
+        </div>
+        <div class="category-item">
+          <a href="shop.html?categ=kids_all">
+            <div class="category-img-container">
+              <img class="category-img" src="assets/images/women.jpg" alt="Kids" />
+              <span class="category-text">Kids</span>
+            </div>
+          </a>
+        </div>
+        <div class="category-item">
+          <a href="shop.html?categ=kids_newbornbaby_viewall">
+            <div class="category-img-container">
+              <img class="category-img" src="assets/images/women.jpg" alt="Beauty" />
+              <span class="category-text">New Born's</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="category-head">Trending now</h2>
+    <div class="trending">
+      <div class="trending-item">
+        <div class="trending-item-img" style='background-image: url("assets/images/summerdresses.png");'></div>
+        <div>
+          <p class="info-text">Colorful summer dresses</p>
+          <p class="price-text">₹3000+</p>
+        </div>
+      </div>
+      <div class="trending-item">
+        <div class="trending-item-img" style='background-image: url("assets/images/sunglasses.png");'></div>
+        <div>
+          <p class="info-text">Vintage sunglasses</p>
+          <p class="price-text">₹3000+</p>
+        </div>
+      </div>
+      <div class="trending-item">
+        <div class="trending-item-img" style='background-image: url("assets/images/sandals.png");'></div>
+        <div>
+          <p class="info-text">Beach ready sandals</p>
+          <p class="price-text">₹3000+</p>
+        </div>
+      </div>
+      <div class="trending-item">
+        <div class="trending-item-img" style='background-image: url("assets/images/graphictees.png");'></div>
+        <div>
+          <p class="info-text">Graphic tees</p>
+          <p class="price-text">₹3000+</p>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="containerf">
+          <div class="row">
+              <div class="footer-col">
+                  <h4>Navigation</h4>
+                  <ul>
+                      <li><a href="">Home</a></li>
+                      <li><a href="">Men</a></li>
+                      <li><a href="">Women</a></li>
+                      <li><a href="">Kids</a></li>
+                      <li><a href="">Beauty</a></li>
+                  </ul>
+              </div>
+              <div class="footer-col">
+                  <h4>Contact us</h4>
+                  <ul>
+                      <li><a>+91 xxxxx xxxxx</a></li>
+                      <li><a>+91 xxxxx xxxxx</a></li>
+                      <li><a>+91 xxxxx xxxxx</a></li>
+                      <li><a>+91 xxxxx xxxxx</a></li>
+                      <li><a>+91 xxxxx xxxxx</a></li>
+                  </ul>
+              </div>
+              <div class="footer-col">
+                  <h4>Our Stores</h4>
+                  <ul>
+                      <li><a style="text-transform:none;">Vijayawada</a></li>
+                      <li><a style="text-transform:none;">Hyderabad</a></li>
+                      <li><a style="text-transform:none;">Vishakapatnam</a></li>
+                      <li><a style="text-transform:none;">Chennai</a></li>
+                      <li><a style="text-transform:none;">Bengaluru</a></li>
+                  </ul>
+              </div>
+              <div class="footer-col">
+                  <h4>Follow us</h4>
+                  <div class="social-links">
+                      <a href=""><i class="fab fa-facebook-f"></i></a>
+                      <a href=""><i class="fab fa-twitter"></i></a>
+                      <a href=""><i class="fab fa-instagram"></i></a>
+                      <a href=""><i class="fab fa-linkedin"></i></a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
+  </body>
+  <script>
+    const searchInput = document.getElementById("searchInput");
+
+    // Listen for "Enter" key press to perform search
+    searchInput.addEventListener("keydown", function (event) {
+        if (event.key === "Enter") {
+            const searchTerm = searchInput.value.trim();
+            if (searchTerm) {
+                // Redirect to shop.html with the search term in the URL
+                window.location.href = `shop.html?search=${encodeURIComponent(searchTerm)}`;
+            }
+        }
+    });
+</script>
+</html>
